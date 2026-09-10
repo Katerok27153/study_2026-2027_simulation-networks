@@ -21,8 +21,8 @@ jobs:
     - name: Push to GitVerse
       run: |
         git remote add gitverse https://${{ secrets.GITVERSE_TOKEN }}@gitverse.ru/Katerok27153/study_2026-2027_simulation-networks.git
-        git push gitverse --all
-        git push gitverse --tags
+        git push gitverse --all --force
+        git push gitverse --tags --force
     
     - name: Push to SourceCraft
       run: |
