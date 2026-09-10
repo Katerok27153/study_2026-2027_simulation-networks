@@ -27,5 +27,5 @@ jobs:
     - name: Push to SourceCraft
       run: |
         git remote add sourcecraft https://${{ secrets.SOURCECRAFT_USERNAME }}:${{ secrets.SOURCECRAFT_TOKEN }}@git.sourcecraft.dev/katerok27153/study-2026-2027-simulation-networks.git
-        git push sourcecraft --all
-        git push sourcecraft --tags
+        git push sourcecraft --all --force
+        git push sourcecraft --tags --force
