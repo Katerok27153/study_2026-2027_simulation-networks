@@ -1,0 +1,3 @@
+\begin{MintedVerbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{h1}\PYG{o}{.}\PYG{n}{cmdPrint}\PYG{p}{(} \PYG{l+s+s1}{\PYGZsq{}tc qdisc add dev h1\PYGZhy{}eth0 root netem delay 10ms reorder 25}\PYG{l+s+si}{\PYGZpc{} 50\PYGZpc{}}\PYG{l+s+s1}{\PYGZsq{}} \PYG{p}{)}
+\end{MintedVerbatim}
