@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{s1}\PYG{o}{.}\PYG{n}{cmdPrint}\PYG{p}{(} \PYG{l+s+s1}{\PYGZsq{}sudo tc qdisc add dev s1\PYGZhy{}eth2 root handle 1: netem delay 10ms\PYGZsq{}} \PYG{p}{)}
+\PYG{n}{s1}\PYG{o}{.}\PYG{n}{cmdPrint}\PYG{p}{(} \PYG{l+s+s1}{\PYGZsq{}sudo tc qdisc add dev s1\PYGZhy{}eth2 parent 1: handle 2: tbf rate 2gbit burst 1000000 limit 2000000\PYGZsq{}} \PYG{p}{)}
+\end{MintedVerbatim}
